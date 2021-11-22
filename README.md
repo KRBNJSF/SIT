@@ -28,5 +28,5 @@ EGP - Routuje mezi AS<br>
 <b>TTL</b> - Smrtelnost paketu<br>
 <b>RIP</b><br>
 <br>
-<href"https://www.samuraj-cz.com/clanek/cisco-routing-3-ospf-open-shortest-path-first/"</href>
+<a>href="https://www.samuraj-cz.com/clanek/cisco-routing-3-ospf-open-shortest-path-first/"</a>
 ![image](https://user-images.githubusercontent.com/90755554/138130766-d8c7f1a4-0320-443c-a859-b27b63fec8d5.png)
