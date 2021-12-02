@@ -37,4 +37,11 @@ Samuraj - OSPF
 <b>MAC adresa</b> - Je přidělena na pevno. Je psaná v Hexadecimalní soustavě. První polovina je udána výrobci -> celosvětově. Druhá polovina samotným výrobcem. Je to jednoznačný modifikátor síťového zařízení.<br>
 <b>ARP table</b> - Dočasně obsahuje Mac adresy<br>
 <b>DNS</b> - Je zahrnutý v TCP/IP. Slouží k překladu jmen objektů na IP adresy či jiné zdrojové adresy. => Zadáme do vyhledávače Google.com, abychom si nemuseli pamatovat IP adresu, DNS to přeloží na IP. <br>
+<b>ARP</b> - Protokol, který získává MAC adresy pro ARP tabulku. Běží na druhé síťové vrstvě TCP/IP.<br>
+DHCP - Dynamic host configuration protocol
+DNS - Domain name system
+Adress resolution protocol<br>
+<b>L3 switch</b> - Umožňuje routování<br>
+
+//<b></b> - <br>
 ![image](https://user-images.githubusercontent.com/90755554/138130766-d8c7f1a4-0320-443c-a859-b27b63fec8d5.png)
