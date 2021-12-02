@@ -42,6 +42,14 @@ DHCP - Dynamic host configuration protocol
 DNS - Domain name system
 Adress resolution protocol<br>
 <b>L3 switch</b> - Umožňuje routování<br>
+<b>Dijkstrův algoritmus</b> - Algoritmus,podle kterého se vypočítávají nejlepší cesty. (SPF) <br>
+<b>Vyhody oblastí OSPF</b> - Sníží výpočet SPF, menší routovací tabulky, snížení Link state update, odlehčení HW<br>
+<b>Tabulky OSPF</b><br> 
+- Routovací: Nejlepší routy do destinací<br>
+- Topologie: Routovací záznamy do všech destinací<br>
+- Sousedů: Informace o sousedních routerech<br>
+- Link state database: Stejná pro všechny routery, pomocí ní se vytvoří routovací tabulky, obraz síťové topologie ve stromové struktuře
 
-//<b></b> - <br>
+
+<b></b> - <br>
 ![image](https://user-images.githubusercontent.com/90755554/138130766-d8c7f1a4-0320-443c-a859-b27b63fec8d5.png)
