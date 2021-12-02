@@ -11,11 +11,13 @@ Automaticky se vypočítávají cesty pomocí routovacího protokolu.<br>
 Dynamické routovací protokoly jsou dvou základních typů: <br>
 Distance vector, Link state<br>
 <br>
-IGP->Distance vector -> RIP, RIP2<br>
-                     ->IGRP, EIGRP<br>
-   ->Link state -> IS-IS<br>
+ -IGP->
+Distance vector -> RIP, RIP2<br>
+                ->IGRP, EIGRP<br>
+   -Link state -> IS-IS<br>
                 -> OSPF<br>
 EGP->Path vector -> BGP<br>
+
 Link - Kvalita linky; Distance - počet hopů<br>
 IGP - Routuje uvnitř AS<br>
 EGP - Routuje mezi AS<br>
