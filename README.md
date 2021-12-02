@@ -52,6 +52,12 @@ Adress resolution protocol<br>
 - Sousedů: Informace o sousedních routerech<br>
 - Link state database: Stejná pro všechny routery, pomocí ní se vytvoří routovací tabulky, obraz síťové topologie ve stromové struktuře
 
+<b>Oblasti</b><br>
+- Standard area: Přijímá link updaty a sumární routy i externí
+- Backbone area: 
+- Stub area
+- Totally stubby area
+- Not so stubby area
 
 <b></b> - <br>
 ![image](https://user-images.githubusercontent.com/90755554/138130766-d8c7f1a4-0320-443c-a859-b27b63fec8d5.png)
