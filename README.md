@@ -58,6 +58,12 @@ Adress resolution protocol<br>
 - Stub area
 - Totally stubby area
 - Not so stubby area
+<br>
+<br>
+Propojení routovacích protokolů - Route Redistribution
+Aby se dalo efektivně podporovat více routovacích protokolů v jedné internetwork, musí se sdílet informace mezi protokoly. Tomu se říká route redistribution. Redistribuce může být jednosměrná nebo obousměrná. Routery, které provádí redistribuci, se nazývají boundary (hraniční).
+
+Redistribuce je, když routovací protokol zveřejňuje routy, které se naučil jiným způsobem, to jsou statické routy, přímo připojené interfacy nebo jiný routovací protokol. Různé routovací protokoly mají různé charakteristiky (jako metriku, podporu classles).
 
 <b></b> - <br>
 ![image](https://user-images.githubusercontent.com/90755554/138130766-d8c7f1a4-0320-443c-a859-b27b63fec8d5.png)
