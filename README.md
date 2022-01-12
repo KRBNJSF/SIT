@@ -72,7 +72,7 @@ Redistribuce je, když routovací protokol zveřejňuje routy, které se naučil
 - 2)conf t
 - 3)ro RIP
 - 4)ver 2
-- 5)net IP sítě
+- 5)net [IP sítě]
 - end
 - wr
 
@@ -81,7 +81,7 @@ OSPF konfigurace:
 - 1)enable
 - 2)conf t
 - 3)ro ospf 1
-- 4)net [IP sítě] [inverzní maska] area [id]
+- 4)net [IP nové sítě] [inverzní maska] area [id]
 - end
 - wr
 
