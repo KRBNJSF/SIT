@@ -85,6 +85,17 @@ OSPF konfigurace:
 - end
 - wr
 
+Redistribuce
+---
+<b>Redistribuce RIP</b>
+- 1)ro rip
+- 2)red ospf [id procesu] metric 1<br>
+
+ <b>Redistribuce OSPF</b>
+ 
+- 1)ro ospf [id procesu]
+- 2)red rip metric 20 subnets
+
 IPV4 prefixes: 
 ---
 
