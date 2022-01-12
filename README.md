@@ -76,7 +76,7 @@ Redistribuce je, když routovací protokol zveřejňuje routy, které se naučil
 - end
 - wr
 
-OSPF konfigurace: 
+OSPF konfigurace
 ---
 - 1)enable
 - 2)conf t
@@ -96,7 +96,7 @@ Redistribuce
 - 1)ro ospf [id procesu]
 - 2)red rip metric 20 subnets
 
-IPV4 prefixes: 
+IPV4 prefixes
 ---
 
 <b></b> - <br>
