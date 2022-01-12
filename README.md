@@ -80,8 +80,8 @@ OSPF konfigurace:
 ---
 - 1)enable
 - 2)conf t
-- 3)ro ospf 1
-- 4)net [IP nové sítě] [inverzní maska] area [id]
+- 3)ro ospf [id procesu] (1 - 30)
+- 4)net [IP nové sítě] [inverzní maska] area [id oblasti]
 - end
 - wr
 
