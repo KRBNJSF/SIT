@@ -1,5 +1,5 @@
 # SIT
-<a href="https://vydb1.spsmb.cz/phpmyadmin/index.php">phpmyadmin</a>
+<a href="https://vydb1.spsmb.cz/phpmyadmin/index.php">phpmyadmin</a><br>
 <b>Rozsah privátních adres: </b><br>
 192.168.0.0/16<br>
 172.16.0.0/12            ->  Používají se v místní síti<br>
