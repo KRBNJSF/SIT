@@ -67,7 +67,22 @@ Aby se dalo efektivně podporovat více routovacích protokolů v jedné interne
 
 Redistribuce je, když routovací protokol zveřejňuje routy, které se naučil jiným způsobem, to jsou statické routy, přímo připojené interfacy nebo jiný routovací protokol. Různé routovací protokoly mají různé charakteristiky (jako metriku, podporu classles).<br>
 
-<b>RIP konfigurace: </b>
+Zařízení: 
+---
+
+<b>HUB</b> 
+- Detekuje fyzicky připojené zařízení k HUB. Rozesílá adresy všem
+
+<b>SWITCH</b>
+- Detekuje specifická fyzická zařízení připojená ke SWITCH. Zná fyzické adresy (MAC), ukládá je do tabulky. Odesílá adresy na určené místo pomocí MAC
+<b>HUB & SWITCH</b>
+- Používají se k výměně dat v místní síti (LAN). K přeposílání dat do jiné sítě se využívá router, jelikož dokáže číst IP adresy.
+
+<b>ROUTER</b>
+- Směruje nebo předává data z jedné sítě do druhé na základě IP adresy.
+- Využívá se k výměně nebo směrování dat do jiné sítě např. na internetu
+
+RIP konfigurace: 
 ---
 - 1)enable
 - 2)conf t
