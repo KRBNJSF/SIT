@@ -75,6 +75,7 @@ Zařízení:
 
 <b>SWITCH</b>
 - Detekuje specifická fyzická zařízení připojená ke SWITCH. Zná fyzické adresy (MAC), ukládá je do tabulky. Odesílá adresy na určené místo pomocí MAC
+
 <b>HUB & SWITCH</b>
 - Používají se k výměně dat v místní síti (LAN). K přeposílání dat do jiné sítě se využívá router, jelikož dokáže číst IP adresy.
 
