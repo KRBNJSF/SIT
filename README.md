@@ -97,6 +97,12 @@ Redistribuce
 - 1)ro ospf [id procesu]
 - 2)red rip metric 20 subnets
 
+VLAN
+---
+
+<a href="https://www.samuraj-cz.com/clanek/vlan-virtual-local-area-network/">Samuraj - VLAN</a>
+
+
 IPV4 prefixes
 ---
 
