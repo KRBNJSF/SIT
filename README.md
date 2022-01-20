@@ -100,8 +100,14 @@ Redistribuce
 VLAN
 ---
 
-<a href="https://www.samuraj-cz.com/clanek/vlan-virtual-local-area-network/">Samuraj - VLAN</a>
+<a href="https://www.samuraj-cz.com/clanek/vlan-virtual-local-area-network/">Samuraj - VLAN</a><br>
+<b>Co je to VLAN? (Vrtual local area network)</b>
+- Souží k logickému rozdělení sítě nezávisle na fyzickém uspořádání -> Vše se rozdělí přímo na switchi, nemusí se hardwarově přepojovat.
+- Sítě jsou rozděleny na menší sítě uvnitř fyzické struktury původní sítě
 
+<b>Trunk port</b><br>
+- Připojení na switchi, jež tvoří VLAN.
+- Všechny rámce (jednotka přenosu na linkové (2.) vrstvě ISO/OSI), které prochází tímto portem, jsou VLAN tagged.
 
 IPV4 prefixes
 ---
