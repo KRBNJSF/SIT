@@ -126,6 +126,7 @@ VLAN konfigurace
 - int f0/2
 - switchport access vlan 10 [ID name]
 
+<a href="https://github.com/KRBNJSF/SIT/blob/main/VLAN.pkt">VLAN v Cisco packet tracer</a>
 
 VLAN
 ---
