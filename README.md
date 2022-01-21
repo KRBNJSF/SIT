@@ -113,6 +113,20 @@ Redistribuce
 - 1)ro ospf [id procesu]
 - 2)red rip metric 20 subnets
 
+
+VLAN konfigurace
+---
+- en
+- conf t
+- vlan [name ID] (vlan 10)
+- ex
+- int f0/1
+- switchport mode access
+- switchport access vlan 10 [ID name]
+- int f0/2
+- switchport access vlan 10 [ID name]
+
+
 VLAN
 ---
 
