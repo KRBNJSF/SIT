@@ -118,7 +118,7 @@ VLAN konfigurace
 ---
 - en
 - conf t
-- vlan [name ID] (vlan 10)
+- vlan [name ID] (například: vlan 10)
 - ex
 - int f0/1
 - switchport mode access
@@ -138,7 +138,16 @@ VLAN
 
 <b>Trunk port</b><br>
 - Připojení na switchi, jež tvoří VLAN.
-- Všechny rámce (jednotka přenosu na linkové (2.) vrstvě ISO/OSI), které prochází tímto portem, jsou VLAN tagged.
+- Všechny rámce (jednotka přenosu na linkové (2.) vrstvě ISO/OSI), které prochází tímto portem, jsou VLAN tagged.<br>
+
+Pro zařazení komunikace do VLANy existují čtyři základní metody, ale v praxi je nejvíce využívána možnost první - zařazení dle portu.<br>
+
+1. podle portu
+2. podle MAC adresy
+3. podle protokolu = podle informace z 3. vrstvy
+4. podle autentizace
+
+Maximální ID vlan je 4096
 
 IPV4 prefixes
 ---
