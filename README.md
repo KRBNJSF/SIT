@@ -118,13 +118,13 @@ VLAN konfigurace
 ---
 - en
 - conf t
-- vlan [name ID] (například: vlan 10)
+- vlan [name ID] (například: 10)
 - ex
-- int f0/1
+- int [port ID]  (například: f0/1)
 - switchport mode access
-- switchport access vlan 10 [ID name]
-- int f0/2
-- switchport access vlan 10 [ID name]
+- switchport access vlan [ID name] (například: 10)
+- int [port ID]  (například: f0/2)
+- switchport access vlan [ID name] (například: 10)
 
 <a href="https://github.com/KRBNJSF/SIT/blob/main/VLAN.pkt">VLAN v Cisco packet tracer</a>
 
@@ -140,7 +140,7 @@ VLAN
 - Připojení na switchi, jež tvoří VLAN.
 - Všechny rámce (jednotka přenosu na linkové (2.) vrstvě ISO/OSI), které prochází tímto portem, jsou VLAN tagged.<br>
 
-Pro zařazení komunikace do VLANy existují čtyři základní metody, ale v praxi je nejvíce využívána možnost první - zařazení dle portu.<br>
+<b>Pro zařazení komunikace do VLANy existují čtyři základní metody, ale v praxi je nejvíce využívána možnost první - zařazení dle portu.</b><br>
 
 1. podle portu
 2. podle MAC adresy
