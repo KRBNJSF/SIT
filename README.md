@@ -119,7 +119,6 @@ VLAN konfigurace
 - en
 - conf t
 - vlan [name ID] (například: 10)
-- ex
 - int [port ID]  (například: f0/1)
 - switchport mode [mode] (například: access, dynamic, trunk)
 - switchport access vlan [ID name] (například: 10)
