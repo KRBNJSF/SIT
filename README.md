@@ -125,7 +125,10 @@ VLAN konfigurace
 - int [port ID]  (například: f0/2)
 - switchport access vlan [ID name] (například: 10)
 
+Pokud chci smazat VLAN - no vlan [ID name] (například 10)
+
 <a href="https://github.com/KRBNJSF/SIT/blob/main/VLAN.pkt">VLAN v Cisco packet tracer</a>
+
 
 VLAN
 ---
