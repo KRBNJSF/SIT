@@ -121,7 +121,7 @@ VLAN konfigurace
 - vlan [name ID] (například: 10)
 - ex
 - int [port ID]  (například: f0/1)
-- switchport mode access
+- switchport mode [chosen mode] (například: access, dynamic, trunk)
 - switchport access vlan [ID name] (například: 10)
 - int [port ID]  (například: f0/2)
 - switchport access vlan [ID name] (například: 10)
