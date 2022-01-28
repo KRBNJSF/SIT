@@ -1,12 +1,15 @@
 # SIT
 <a href="https://vydb1.spsmb.cz/phpmyadmin/index.php">phpmyadmin</a><br>
+
+<a href="https://github.com/KRBNJSF/SIT/tree/main/Cisco%20packet%20tracer">🔌 - Cisco files</a>
+
 <b>Rozsah privátních adres: </b><br>
 192.168.0.0/16<br>
 172.16.0.0/12            ->  Používají se v místní síti<br>
 10.0.0.0/8<br>
 <b>Routovací tabulka: </b><br>
 Statické, Dynamické, Defaultní<br>
-Statické:Používá se v malých sítích, pokud nebude změna v topologii<br>
+Statické: Používá se v malých sítích, pokud nebude změna v topologii<br>
 Dynamické: Funguje na základě routovacích protokolů, síť se automaticky přizpůsobuje změnám v topologii a dopravě dat. <br>
 Automaticky se vypočítávají cesty pomocí routovacího protokolu.<br>
 Dynamické routovací protokoly jsou dvou základních typů: <br>
