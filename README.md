@@ -129,7 +129,7 @@ Pokud chci smazat VLAN - no vlan [ID name] (například 10)
 
 <a href="https://github.com/KRBNJSF/SIT/blob/main/VLAN.pkt">VLAN v Cisco packet tracer</a>
 
-<a href="/KRBNJSF/SIT/raw/main/VLAN.pkt" download>
+<a href="/KRBNJSF/SIT/blob/main/VLAN.pkt?raw=true" download>
   <img src="/images/myw3schoolsimage.jpg" alt="VLAN v Cisco packet tracer" width="104" height="142">
 </a>
 
