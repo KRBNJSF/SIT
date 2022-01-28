@@ -160,7 +160,7 @@ switchport nonegotiate
 no sh
 ```
 <b>TRUNK v Cisco packet tracer</b><br>
- <a href="https://github.com/KRBNJSF/SIT/raw/main/VLAN.pkt" target="_blank">
+ <a href="https://github.com/KRBNJSF/SIT/raw/main/Trunk.pkt" target="_blank">
   <img src="https://i.pinimg.com/originals/ae/a2/3e/aea23e6bee60b97b28d41e523604948a.jpg" alt="VLAN v Cisco packet tracer" width="140" height="142">
 </a><br>
 
