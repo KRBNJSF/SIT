@@ -132,6 +132,7 @@ Pokud chci smazat VLAN - no vlan [ID name] (například 10)
  <a href="https://github.com/KRBNJSF/SIT/raw/main/VLAN.pkt" target="_blank">
   <img src="https://i.pinimg.com/originals/ae/a2/3e/aea23e6bee60b97b28d41e523604948a.jpg" alt="VLAN v Cisco packet tracer" width="140" height="142">
 </a><br>
+<b>Click on the router to download the file</b>
 
 VLAN konfigurace - TRUNK
 ---
@@ -162,6 +163,7 @@ no sh
  <a href="https://github.com/KRBNJSF/SIT/raw/main/Trunk.pkt" target="_blank">
   <img src="https://i.pinimg.com/originals/ae/a2/3e/aea23e6bee60b97b28d41e523604948a.jpg" alt="VLAN v Cisco packet tracer" width="140" height="142">
 </a><br>
+<b>Click on the router to download the file</b>
 
 VLAN
 ---
