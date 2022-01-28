@@ -116,6 +116,7 @@ Redistribuce
 
 VLAN konfigurace
 ---
+<a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/">VLAN konfigurace samuraj</a>
 - en
 - conf t
 - vlan [name ID] (například: 10)
@@ -127,11 +128,11 @@ VLAN konfigurace
 
 Pokud chci smazat VLAN - no vlan [ID name] (například 10)
 
-<a href="https://github.com/KRBNJSF/SIT/blob/main/VLAN.pkt">VLAN v Cisco packet tracer</a>
-
- <a href="https://github.com/KRBNJSF/SIT/raw/main/VLAN.pkt target="_blank">
-  <img src="/images/myw3schoolsimage.jpg" alt="VLAN v Cisco packet tracer" width="104" height="142">
-</a>
+<a href="https://github.com/KRBNJSF/SIT/blob/main/VLAN.pkt">VLAN v Cisco packet tracer</a><br>
+<b>VLAN v Cisco packet tracer</b><br>
+ <a href="https://github.com/KRBNJSF/SIT/raw/main/VLAN.pkt" target="_blank">
+  <img src="https://i.pinimg.com/originals/ae/a2/3e/aea23e6bee60b97b28d41e523604948a.jpg" alt="VLAN v Cisco packet tracer" width="140" height="142">
+</a><br>
 
 VLAN konfigurace - TRUNK
 ---
@@ -179,7 +180,7 @@ VLAN
 3. podle protokolu = podle informace z 3. vrstvy
 4. podle autentizace
 
-Maximální ID vlan je 4096
+Maximální ID vlan je 4095
 
 <b>IEEE 802.1q tagging</b><br>
 Protokolu IEEE 802.1q se říká také trunking protokol nebo dot1q tagging. Jedná se o standardizovanou metodu, kterou podporují všechny moderní switche s podporou VLAN. Funguje na principu tzv. tagování. Vezmeme originální rámec, jeho hlavičku rozšíříme o 4B informací, z nichž první je značka, že se jedná o protokol 802.1q (hodnota 0x8100). Dále následuje priorita dle protokolu 802.1p, příznak, zda je MAC adresa v kanonickém tvaru a poslední je číslo VLANy.
