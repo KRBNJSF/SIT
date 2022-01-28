@@ -133,9 +133,31 @@ Pokud chci smazat VLAN - no vlan [ID name] (například 10)
   <img src="/images/myw3schoolsimage.jpg" alt="VLAN v Cisco packet tracer" width="104" height="142">
 </a>
 
-VLAN - TRUNK
+VLAN konfigurace - TRUNK
 ---
 
+ - en
+ - conf t
+ - int [port ID] (například: g0/1)
+ - sh
+ - switchport trunk allowed vlan [rozsah povolených vlan] (například: 10-100)
+ - switchport trunk native vlan [ID name] (například: 10)
+ - switchport mode trunk
+ - switchport nonegotiate
+ - no sh
+ 
+<b>Příklad: </b><br>
+```
+en
+conf t
+int g0/1
+sh
+switchport trunk allowed vlan 10-100
+switchport trunk native vlan 10
+siwtchport mode trunk
+switchport nonegotiate
+no sh
+```
 
 
 VLAN
@@ -163,6 +185,13 @@ Maximální ID vlan je 4096
 Protokolu IEEE 802.1q se říká také trunking protokol nebo dot1q tagging. Jedná se o standardizovanou metodu, kterou podporují všechny moderní switche s podporou VLAN. Funguje na principu tzv. tagování. Vezmeme originální rámec, jeho hlavičku rozšíříme o 4B informací, z nichž první je značka, že se jedná o protokol 802.1q (hodnota 0x8100). Dále následuje priorita dle protokolu 802.1p, příznak, zda je MAC adresa v kanonickém tvaru a poslední je číslo VLANy.
 
 Protože se změnila data, je třeba přepočítat kontrolní součet na konci rámce.
+
+
+<b>Native VLAN</b><br>
+Posílá netaggované rámce
+
+<b>Dynamic trunk protocol (DTP)</b><br>
+Protokol automaticky vyjedná na daném portu trunk
 
 IPV4 prefixes
 ---
