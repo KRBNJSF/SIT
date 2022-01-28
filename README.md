@@ -1,7 +1,7 @@
 # SIT
-<a href="https://vydb1.spsmb.cz/phpmyadmin/index.php">phpmyadmin</a><br>
+<a href="https://vydb1.spsmb.cz/phpmyadmin/index.php">🔌 phpmyadmin</a><br>
 
-<a href="https://github.com/KRBNJSF/SIT/tree/main/Cisco%20packet%20tracer">🔌 - Cisco files</a>
+<a href="https://github.com/KRBNJSF/SIT/tree/main/Cisco%20packet%20tracer">💾 Cisco files</a>
 
 <b>Rozsah privátních adres: </b><br>
 192.168.0.0/16<br>
