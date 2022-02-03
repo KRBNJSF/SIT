@@ -72,7 +72,7 @@ Redistribuce je, když routovací protokol zveřejňuje routy, které se naučil
 
 <b>2 způsoby konfigurace</b><br>
 Write<br>
-copy running -config startup -config
+copy running-config startup-config
 
 Zařízení: 
 ---
