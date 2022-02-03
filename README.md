@@ -187,7 +187,8 @@ VLAN
 3. podle protokolu = podle informace z 3. vrstvy
 4. podle autentizace
 
-Maximální ID vlan je 4095
+Maximální ID vlan je 4095<br>
+2-1001	běžný rozsah pro ethernetové VLANy
 
 <b>IEEE 802.1q tagging</b><br>
 Protokolu IEEE 802.1q se říká také trunking protokol nebo dot1q tagging. Jedná se o standardizovanou metodu, kterou podporují všechny moderní switche s podporou VLAN. Funguje na principu tzv. tagování. Vezmeme originální rámec, jeho hlavičku rozšíříme o 4B informací, z nichž první je značka, že se jedná o protokol 802.1q (hodnota 0x8100). Dále následuje priorita dle protokolu 802.1p, příznak, zda je MAC adresa v kanonickém tvaru a poslední je číslo VLANy.
