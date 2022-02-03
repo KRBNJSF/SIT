@@ -70,6 +70,10 @@ Aby se dalo efektivně podporovat více routovacích protokolů v jedné interne
 
 Redistribuce je, když routovací protokol zveřejňuje routy, které se naučil jiným způsobem, to jsou statické routy, přímo připojené interfacy nebo jiný routovací protokol. Různé routovací protokoly mají různé charakteristiky (jako metriku, podporu classles).<br>
 
+<b>2 způsoby konfigurace</b><br>
+Write<br>
+copy running -config startup -config
+
 Zařízení: 
 ---
 
