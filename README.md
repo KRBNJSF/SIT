@@ -179,7 +179,7 @@ no sh
 <b>Click on the router to download: TRUNK v Cisco packet tracer</b>
 
 
-protocol VTP (vlan trunking protocol)
+protocol VTP (VLAN Trunking Protocol)
 ---
 
 <a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/#diggs">VTP - samuraj</a>
