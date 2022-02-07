@@ -179,8 +179,14 @@ no sh
 <b>Click on the router to download: TRUNK v Cisco packet tracer</b>
 
 
-protocol VTP
+protocol VTP (vlan trunking protocol)
 ---
+
+<a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/#diggs">VTP - samuraj</a>
+
+![image](https://user-images.githubusercontent.com/90755554/152783279-499b80a5-dd02-4360-a5a6-a9c089f3d371.png)<br>
+
+
 <b>Konfigurace VTP</b>
 
 - en
@@ -197,6 +203,13 @@ switch 1
 - vtp mode server
 ```
 switch 2
+```
+- en
+- conf t
+- vtp domain spsmb
+- vtp mode client
+```
+switch 3
 ```
 - en
 - conf t
