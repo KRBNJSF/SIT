@@ -182,7 +182,7 @@ no sh
 protocol VTP (VLAN Trunking Protocol)
 ---
 
-<a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/#diggs">VTP - samuraj</a>
+<a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/#diggs">🌐VTP - samuraj</a>
 
 ![image](https://user-images.githubusercontent.com/90755554/152783279-499b80a5-dd02-4360-a5a6-a9c089f3d371.png)<br>
 
