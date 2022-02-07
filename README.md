@@ -3,6 +3,8 @@
 
 <a href="https://github.com/KRBNJSF/SIT/tree/main/Cisco%20packet%20tracer">💾 Cisco files</a>
 
+<a href="http://www.staggeringbeauty.com/">Stránka pro frajery</a>
+
 <b>Rozsah privátních adres: </b><br>
 192.168.0.0/16<br>
 172.16.0.0/12            ->  Používají se v místní síti<br>
