@@ -178,6 +178,32 @@ no sh
 </a><br>
 <b>Click on the router to download: TRUNK v Cisco packet tracer</b>
 
+
+protocol VTP
+---
+<b>Konfigurace VTP</b>
+
+- en
+- conf t
+- vtp domain [domain name] (například: spsmb)
+- vtp mode [mode] (například: client, server, transparent)
+
+
+switch 1
+```
+- en
+- conf t
+- vtp domain spsmb
+- vtp mode server
+```
+switch 2
+```
+- en
+- conf t
+- vtp domain spsmb
+- vtp mode client
+```
+
 VLAN
 ---
 
