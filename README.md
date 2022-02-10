@@ -246,6 +246,8 @@ SVI (Switch Virtual Interface)
 ---
 <a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/">SVI - samuraj</a>
 
+<a href="/KRBNJSF/SIT/raw/main/Cisco%20packet%20tracer/VLAN%20-%20TRUNK%20-%20SVI.pkt">SVI - Cisco packet tracer</a>
+
 
 ![image](https://user-images.githubusercontent.com/90755554/153408309-d4947b1e-d158-455d-85ac-d08b3eba0388.png)
 
