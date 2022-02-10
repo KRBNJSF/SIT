@@ -131,6 +131,9 @@ Redistribuce
 
 VLAN konfigurace
 ---
+<b>Zobrazení všech VLAN</b>
+- show vlan
+
 <a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/">VLAN konfigurace samuraj</a>
 - en
 - conf t
@@ -142,6 +145,14 @@ VLAN konfigurace
 - switchport access vlan [ID name] (například: 10)
 
 Pokud chci smazat VLAN - no vlan [ID name] (například 10)
+
+<b>2 způsoby tvorby VLAN</b>
+- int [port ID] (například: f0/1)
+- switchport acess VLAN [name ID]<br>
+(Pokud VLAN neexistuje, tak se automaticky vytvoří)
+
+- int [port ID] (například: f0/1)
+- VLAN [name ID]
 
 <b>VLAN v Cisco packet tracer</b><br>
  <a href="https://github.com/KRBNJSF/SIT/raw/main/VLAN.pkt" target="_blank">
@@ -163,7 +174,7 @@ VLAN konfigurace - TRUNK
  - conf t
  - int [port ID] (například: g0/1)
  - sh
- - switchport trunk allowed vlan [rozsah povolených vlan] (například: 10-100)
+ - switchport trunk allowed vlan [rozsah povolených vlan] (například: 10-100)  |nebo|  sw tr all vlan [rozsah povolených vlan]
  - switchport trunk native vlan [ID name] (například: 10)
  - switchport mode trunk
  - switchport nonegotiate
