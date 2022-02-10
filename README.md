@@ -242,8 +242,25 @@ switch 3
 - vtp mode client
 ```
 
-
+SVI (Switch Virtual Interface)
 ---
+<a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/">SVI - samuraj</a>
+
+
+![image](https://user-images.githubusercontent.com/90755554/153408309-d4947b1e-d158-455d-85ac-d08b3eba0388.png)
+
+<b>Konfigurace SVI</b>
+- en
+- conf t
+- int vlan [ID name]
+- ip add [IP add] [mask]
+
+```
+- en
+- conf t
+- int vlan 2
+- ip add 10.0.0.10 255.0.0.0
+```
 
 
 VLAN
