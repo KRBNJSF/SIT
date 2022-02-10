@@ -149,6 +149,13 @@ Pokud chci smazat VLAN - no vlan [ID name] (například 10)
 </a><br>
 <b>Click on the router to download: VLAN v Cisco packet tracer</b>
 
+<b>Změna názvu Switche</b>
+- hostname [název]
+
+<b>Změna názvu VLAN</b>
+- VLAN [name ID]
+- name [yourName] (například: sklady)
+
 VLAN konfigurace - TRUNK
 ---
 
@@ -187,6 +194,11 @@ protocol VTP (VLAN Trunking Protocol)
 <a href="https://www.samuraj-cz.com/clanek/cisco-ios-7-konfigurace-vlan-vtp/#diggs">🌐VTP - samuraj</a>
 
 ![image](https://user-images.githubusercontent.com/90755554/152783279-499b80a5-dd02-4360-a5a6-a9c089f3d371.png)<br>
+
+<b>VTP modes</b>
+- server (Obsahuje VLANy)
+- client (Zkopíruje VLANy ze serveru)
+- transparent (Žádné informace nebere, jen projde)
 
 
 <b>Konfigurace VTP</b>
