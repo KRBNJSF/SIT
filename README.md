@@ -272,8 +272,11 @@ STP (Spanning Tree Protocol)
 ---
 <a href="https://www.samuraj-cz.com/clanek/cisco-ios-9-spanning-tree-protocol/">STP - samuraj</a>
 
-
-
+<b>STP v Cisco packet tracer</b><br>
+ <a href="https://github.com/KRBNJSF/SIT/raw/main/Cisco%20packet%20tracer/STP.pkt" target="_blank">
+  <img src="https://i.pinimg.com/originals/ae/a2/3e/aea23e6bee60b97b28d41e523604948a.jpg" alt="VLAN v Cisco packet tracer" width="140" height="142">
+</a><br>
+<b>Click on the router to download: STP v Cisco packet tracer</b>
 
 <b>Konfigurace STP</b>
 - <b>Konfigurace pro celý switch</b>
