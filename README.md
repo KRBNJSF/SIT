@@ -277,6 +277,15 @@ STP (Spanning Tree Protocol)
 <img src="https://user-images.githubusercontent.com/90755554/153857831-2c82f5bd-5d94-493d-8b93-d2bcd4fcad62.png" alt="STP" width="85%">
 </p>
 
+### <b>Problémy smyček</b>
+- <b>broadcastová bouře</b> - u broadcastů se tyto budou rozmnožovat, až dosáhnou kritického množství
+- <b>problémy s konektivitou</b> nebo nestabilita tabulky MAC adres (CAM)
+  - díky smyčce zpráva přijde na switch z více portů a on si stále mění adresu zdroje, v určitém případě může dojít k tomu, že si switch myslí, že je stanice připojena ke špatnému portu a nikdy ji nedoručí zprávu
+- <b>několikanásobné doručení</b>
+  - zpráva koluje v síti stále dokola a stále se doručuje
+
+![image](https://user-images.githubusercontent.com/90755554/153859402-91e22655-a6ff-4039-af90-c5ece23b3f42.png)
+
 
 <b>STP v Cisco packet tracer</b><br>
  <a href="https://github.com/KRBNJSF/SIT/raw/main/Cisco%20packet%20tracer/STP.pkt" target="_blank">
@@ -284,7 +293,7 @@ STP (Spanning Tree Protocol)
 </a><br>
 <b>Click on the router to download: STP v Cisco packet tracer</b>
 
-<b>Konfigurace STP</b>
+### <b>Konfigurace STP</b>
 - <b>Konfigurace pro celý switch</b>
   - en
   - conf t
