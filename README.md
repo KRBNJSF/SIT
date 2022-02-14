@@ -268,6 +268,39 @@ SVI (Switch Virtual Interface)
 - ip add 10.0.0.10 255.0.0.0
 ```
 
+STP (Spanning Tree Protocol)
+---
+<a href="https://www.samuraj-cz.com/clanek/cisco-ios-9-spanning-tree-protocol/">STP - samuraj</a>
+
+
+
+
+<b>Konfigurace STP</b>
+- <b>Konfigurace pro celý switch</b>
+  - en
+  - conf t
+  - spanning-tree portfast default
+ 
+```
+- en
+- conf t
+- spanning-tree portfast default
+```
+
+- <b>Konfigurace na určitý port</b>
+  - en
+  - conf t
+  - int [port ID] (například: f0/1)
+  - spanning-tree portfast
+
+```
+- en
+- conf t
+- int f0/1
+- spanning-tree portfast
+```
+ 
+
 
 VLAN
 ---
