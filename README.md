@@ -271,6 +271,12 @@ SVI (Switch Virtual Interface)
 STP (Spanning Tree Protocol)
 ---
 <a href="https://www.samuraj-cz.com/clanek/cisco-ios-9-spanning-tree-protocol/">STP - samuraj</a>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90755554/153857801-a15f0c1e-548f-43fd-a064-ae1356ab6c57.png" alt="STP" width="85%">
+ 
+<img src="https://user-images.githubusercontent.com/90755554/153857831-2c82f5bd-5d94-493d-8b93-d2bcd4fcad62.png" alt="STP" width="85%">
+</p>
+
 
 <b>STP v Cisco packet tracer</b><br>
  <a href="https://github.com/KRBNJSF/SIT/raw/main/Cisco%20packet%20tracer/STP.pkt" target="_blank">
