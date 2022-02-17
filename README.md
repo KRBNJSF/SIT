@@ -354,6 +354,38 @@ Posílá netaggované rámce
 <b>Dynamic trunk protocol (DTP)</b><br>
 Protokol automaticky vyjedná na daném portu trunk
 
+### SVI (Telnet, SSH)
+
+TELNET CONNECTION
+ - Switch(config)#int vlan [number] (příklad: 10)
+ - Switch(config-if)#ip address [ip] [mask] (příklad: 192.168.1.10  255.255.255.0)
+ - Switch(config-if)#exit
+
+SVI
+ - Switch(config)#line vty [numbers] (příklad: 0 1)
+ - Switch(config)#password [password] (příklad: cisco)
+ - Switch(config)#enable secret [password] (příklad: cisco)
+
+SVI + SSH configuration
+ ...
+ - Switch(config)#hostname [name]
+ - name(config)#username [username] secret [password] (příklad: cisco ... heslo)
+ - name(config)#ip ssh time-out [time is seconds] (příklad: 60)
+ - name(config)#ip ssh authentication-retries [tries] (příklad: 3)
+ - name(config)#ip ssh version 2
+ - name(config)#ip domain name [name] (příklad: spsmb.local) 
+ - name(config)#crypto key generate rsa
+ - ...
+ - How many bits in the modulus [512]: 1024
+ - name(config)#line vty [numbers] (příklad: 0 1)
+ - name(config)#transport input ssh
+
+TELNET CONNECTION
+ On pc:
+  Telnet / SSH Client
+   - Telnet
+   - IP : [ip address]
+
 IPV4 prefixes
 ---
 
