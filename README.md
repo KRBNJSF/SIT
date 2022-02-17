@@ -381,10 +381,10 @@ SVI + SSH configuration
  - name(config)#transport input ssh
 
 TELNET CONNECTION
- On pc:
-  Telnet / SSH Client
-   - Telnet
-   - IP : [ip address]
+ - On pc:
+   - Telnet / SSH Client
+     - Telnet
+     - IP : [ip address]
 
 IPV4 prefixes
 ---
