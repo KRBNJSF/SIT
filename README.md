@@ -386,6 +386,18 @@ TELNET CONNECTION
      - Telnet
      - IP : [ip address]
 
+### Konfigurace TRUNKu na Routeru
+ - int [idPortu].[vlan] (př.: int g0/0.10)
+ - encapsulation dot1Q [vlan] native (př.: encapsulation dot1Q 10 native)
+ - ip add 192.168.1.2 255.255.255.0
+ - exit
+ - int [idPortu].[vlan] (př.: int g0/0.20)
+ - encapsulation dot1Q [vlan] (př.: encapsulation dot1Q 20)
+ - ip add 192.168.2.2 255.255.255.0
+ - exit
+ - int g0/0
+ - no sh
+
 IPV4 prefixes
 ---
 
