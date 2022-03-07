@@ -398,11 +398,9 @@ TELNET CONNECTION
  - int g0/0
  - no sh
 
-ACL
+ACL (Access Control list)
 ---
 <a href="https://www.samuraj-cz.com/clanek/cisco-ios-8-access-control-list/">ACL</a>
-
-<b>Access Control list</b>
 
 <b>Použití ACL: </b>
  - filtrování paketů - řízení (omezování) síťového provozu
