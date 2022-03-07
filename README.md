@@ -398,6 +398,24 @@ TELNET CONNECTION
  - int g0/0
  - no sh
 
+ACL
+---
+<a href="https://www.samuraj-cz.com/clanek/cisco-ios-8-access-control-list/">ACL</a>
+
+<b>Access Control list</b>
+
+<b>Použití ACL: </b>
+ - filtrování paketů - řízení (omezování) síťového provozu
+
+
+### Typy ACL
+ - IP ACL - filtruje IPv4 provoz – IP, TCP, UDP, IGMP (multicast), ICMP
+   - Port ACL - pro fyzický L2 interface (aplikujeme na port), pouze příchozí směr
+ - MAC ACL - non-IP provoz
+   - Port ACL
+   - VLAN map
+
+
 IPV4 prefixes
 ---
 
