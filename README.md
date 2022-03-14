@@ -398,7 +398,7 @@ TELNET CONNECTION
  - int g0/0
  - no sh
 
-<a href="/KRBNJSF/SIT/raw/main/Cisco%20packet%20tracer/Schema.pkt" target="_blank">
+<a href="https://github.com/KRBNJSF/SIT/raw/main/Cisco%20packet%20tracer/Schema.pkt" target="_blank">
   <img src="https://i.pinimg.com/originals/ae/a2/3e/aea23e6bee60b97b28d41e523604948a.jpg" alt="VLAN, SVI, Telnet v Cisco packet tracer" width="140" height="142">
 </a><br>
 
