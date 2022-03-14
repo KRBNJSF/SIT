@@ -387,16 +387,20 @@ TELNET CONNECTION
      - IP : [ip address]
 
 ### Konfigurace TRUNKu na Routeru
- - int [idPortu].[vlan] (př.: int g0/0.10)
- - encapsulation dot1Q [vlan] native (př.: encapsulation dot1Q 10 native)
+ - int [idPortu].[idVlan] (př.: int g0/0.10)
+ - encapsulation dot1Q [idVlan] native (př.: encapsulation dot1Q 10 native)
  - ip add 192.168.1.2 255.255.255.0
  - exit
- - int [idPortu].[vlan] (př.: int g0/0.20)
- - encapsulation dot1Q [vlan] (př.: encapsulation dot1Q 20)
+ - int [idPortu].[idVlan] (př.: int g0/0.20)
+ - encapsulation dot1Q [idVlan] (př.: encapsulation dot1Q 20) - Nenativní Vlan
  - ip add 192.168.2.2 255.255.255.0
  - exit
  - int g0/0
  - no sh
+
+<a href="" target="_blank">
+  <img src="https://i.pinimg.com/originals/ae/a2/3e/aea23e6bee60b97b28d41e523604948a.jpg" alt="VLAN, SVI, Telnet v Cisco packet tracer" width="140" height="142">
+</a><br>
 
 ACL (Access Control list)
 ---
