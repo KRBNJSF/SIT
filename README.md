@@ -423,3 +423,70 @@ IPV4 prefixes
 
 <b></b> - <br>
 ![image](https://user-images.githubusercontent.com/90755554/138130766-d8c7f1a4-0320-443c-a859-b27b63fec8d5.png)
+
+---
+
+## IPv6
+ - větší adresní prostor - 128 bitů
+ - změna IP hlavičky - 40 bytů
+ - rozšířující hlavičky
+ - síťová maska - min. 64 bitů
+ - skupiínové adresy
+   - FF02::1 - všichni hosté
+   - FF02::2 - všechny směrovače
+   - FF02::1:2 - všechny DHCP servery
+ - absence překladu adres (NAT)
+ - ARP je nahrazen ICMPv6 ND
+ - detekce duplicitních adres (DAD)
+ - prostředky pro jednodušší správu sítě
+ - vestavěné bezpečnostní mechanismy (IPsec)
+ - mobilita
+ - podpora jumbogramů = větší než 64kB - 4GB
+ - optimalizace pro směrování
+ - IP fragmentace
+ 
+![image](https://user-images.githubusercontent.com/83291717/165069573-d4b415fa-61ce-4388-b4f0-ac51ad5bac70.png)
+
+#### IP adresa
+ - zápis je realizován v 16-kové soustavě
+ - 128 bitů (16 bytů) rozděleno po 2 bytech oddělených dvojtečkou
+ - ukázka globální inviduální adresy (obdoba IPv4 veřejné adresy)
+ - `2001:0db8:ab00:00c3:0000:0000:0000:0002`
+ - `ff01:0000:0000:0000:0000:0000:0000:0101`
+ - pro zjednodušení lze použít následující pravidla:
+   - počáteční nuly v každé dvojici bytů lze vynechat
+     - např. `ff01:0:0:0:0:0:0:101`
+   - sousedící nulu lze nahradit
+     - např. `ff01::101`
+ - **zkrácení zápisu lze provést pouze jednou!!! (nejednoznačnost interpretace)**
+ - ***špatný zápis adresy:***
+ - `2001::FFD3::57ab`
+ - RFC 5952 - zaveden **"kanonický zápis"**
+ - účelem je snížit polymorfii adres
+ - aplikace na vstup podporuje všechny tvary adres, ale na výstupu je používán pouze kanonický zápis
+ - pravidla kanonického zápisu:
+ 		- šestnáctkové číslice se zapisují malými písmeny
+ 		- vynechání počátečních nul ve čteřici je povinné
+ 		- konstrukce "::" musí mít co největší efekt
+ 
+ #### Typy Adres
+	
+	
+	- **Inviduální adresy (unicast)**
+			- označuje jedno rozhrání připojeného počítače či zařízení
+	- **Slupinové adresy (multicast)**
+			- představují adresu skupiny síťových rozhrání
+			- paket se skupinovou cílovou adresou bude dopraven všem členům skupin
+			- tyto adresy se používají nejčastěji pro zvukové či obrazové sdílení
+	- **Výběrové adresy (anycast)**
+			- také označují skupinu síťových rozhrání, ale datagram bude dopraven jen na jedno z nich 
+	- **Neexistuje broadcast!!!**
+	
+	| prefix | váznam |
+	| --- | --- |
+	| ::/128 | nedefinovaná adres |
+	| ::1/128 | lokální smyčka |
+	| fc00::/7 | unikátní inviduální lokální |
+	| fe80::/10 | inviduální lokální linkové adresy |
+	| ff00::/8 | skupinové |
+	| ostatní | inviduální globální |
