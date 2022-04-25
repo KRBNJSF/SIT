@@ -469,24 +469,22 @@ IPV4 prefixes
  		- vynechání počátečních nul ve čteřici je povinné
  		- konstrukce "::" musí mít co největší efekt
  
- #### Typy Adres
-	
-	
-	- **Inviduální adresy (unicast)**
-			- označuje jedno rozhrání připojeného počítače či zařízení
-	- **Slupinové adresy (multicast)**
-			- představují adresu skupiny síťových rozhrání
-			- paket se skupinovou cílovou adresou bude dopraven všem členům skupin
-			- tyto adresy se používají nejčastěji pro zvukové či obrazové sdílení
-	- **Výběrové adresy (anycast)**
-			- také označují skupinu síťových rozhrání, ale datagram bude dopraven jen na jedno z nich 
-	- **Neexistuje broadcast!!!**
-	
-	| prefix | váznam |
-	| --- | --- |
-	| ::/128 | nedefinovaná adres |
-	| ::1/128 | lokální smyčka |
-	| fc00::/7 | unikátní inviduální lokální |
-	| fe80::/10 | inviduální lokální linkové adresy |
-	| ff00::/8 | skupinové |
-	| ostatní | inviduální globální |
+ #### Typy Adres	
+  - **Inviduální adresy (unicast)**
+    - označuje jedno rozhrání připojeného počítače či zařízení
+  - **Slupinové adresy (multicast)**
+    - představují adresu skupiny síťových rozhrání
+    - paket se skupinovou cílovou adresou bude dopraven všem členům skupin
+    -  tyto adresy se používají nejčastěji pro zvukové či obrazové sdílení
+  - **Výběrové adresy (anycast)**
+    - také označují skupinu síťových rozhrání, ale datagram bude dopraven jen na jedno z nich 
+  - **Neexistuje broadcast!!!**
+
+| prefix | váznam |
+| --- | --- |
+| ::/128 | nedefinovaná adres |
+| ::1/128 | lokální smyčka |
+| fc00::/7 | unikátní inviduální lokální |
+| fe80::/10 | inviduální lokální linkové adresy |
+| ff00::/8 | skupinové |
+| ostatní | inviduální globální |
