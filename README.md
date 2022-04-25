@@ -480,11 +480,16 @@ IPV4 prefixes
     - také označují skupinu síťových rozhrání, ale datagram bude dopraven jen na jedno z nich 
   - **Neexistuje broadcast!!!**
 
-| prefix | váznam |
+| prefix | význam |
 | --- | --- |
 | ::/128 | nedefinovaná adres |
 | ::1/128 | lokální smyčka |
 | fc00::/7 | unikátní inviduální lokální |
-| fe80::/10 | inviduální lokální linkové adresy |
+| fe80::/10 | individuální lokální linkové adresy |
 | ff00::/8 | skupinové |
-| ostatní | inviduální globální |
+| ostatní | individuální globální |
+
+### PREFIX
+
+- <b>Prefixy</b> se zapisují stejně jako IPv4 adresa/délka, kde adresa určuje začátek adresy (její nevýznamné bity bývá zvykem vynulovat) a délka definuje, kolik bitů se významných
+- Například prefixu <b>ff::/8</b> vyhoví každá adresy, jež má v privních osmi bitech samé jedničky
