@@ -489,7 +489,35 @@ IPV4 prefixes
 | ff00::/8 | skupinové |
 | ostatní | individuální globální |
 
-#### PREFIX
+#### Prefix
+- **Prefixy** se zapisují stejně jako IPv4 adresa/délka, kde adresa určuje začátek adresy (její nevýznamné bity bývá zvykem vynulovat) a délka definuje, kolik bitů se významných
+- Například prefixu ***ff::/8*** vyhoví každá adresy, jež má v privních osmi bitech samé jedničky
 
-- <b>Prefixy</b> se zapisují stejně jako IPv4 adresa/délka, kde adresa určuje začátek adresy (její nevýznamné bity bývá zvykem vynulovat) a délka definuje, kolik bitů se významných
-- Například prefixu <b>ff::/8</b> vyhoví každá adresy, jež má v privních osmi bitech samé jedničky
+#### Hlavička IPv6
+![image](https://user-images.githubusercontent.com/83291717/165735687-7f526331-d129-42e8-b75d-13f6226597e9.png)
+
+- **Verze IP** = 6
+- **Třída dat** - 4 bity (0 - 15)
+  - specifukuje přenášená data pro případ rozhodování v okamžiku zahlcení sítě
+- **A)** - 0 - 7 - klasický provoz
+  - 0 - nespecifikovaná data
+  - 1 - provoz na pozadí
+  - 2 - automatický provoz
+  - 4 - uživatelem prováděné velké přenosy (ftp)
+  - 6 - interaktivní provoz (telnet)
+  - 7 - řízení sítě (směrovací protokoly)
+- **B)** - 8 - 15 - určeno pro přenosy v reálném čase (audio)
+- datagramy s nižší hodnotou se zahazují dříve než s hodnotou vyšší - platí pouze pro interval **8 - 15**
+- **identifikace toku dat** - řeší směrování datagramů
+- datagramy jednoho souboru dostanouá svou identifikaci
+- směrovač řeší úlohu směrování **pouze pro první datagram**
+- cestu si uloží do paměti (max. na 6 vteřin)
+- zbylé datagramy posílá na základě záznamu v paměti
+- lze využít i k zajištění šířky přenášeného pásma
+- **délka dat** - specifikuje délku IP datagramu
+- velikost - 2 bajty
+- možnost zvětšení - v další hlavičce
+- **další hlavičky** - specifikuje typ následující hlavičky
+  - nepovinná položka
+  - obsahuje jen nutné hlavičky
+  - pole **délka hlavičky** - specifikuje posunutí, které je potřeba udělat k další hlavičce 
