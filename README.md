@@ -427,6 +427,9 @@ IPV4 prefixes
 ---
 
 ## IPv6
+
+<a href="https://github.com/KRBNJSF/SIT/tree/main/IPv6">IPv6 - prezentace</a>
+
  - větší adresní prostor - 128 bitů
  - změna IP hlavičky - 40 bytů
  - rozšířující hlavičky
