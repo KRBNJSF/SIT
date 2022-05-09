@@ -524,3 +524,20 @@ IPV4 prefixes
   - nepovinná položka
   - obsahuje jen nutné hlavičky
   - pole **délka hlavičky** - specifikuje posunutí, které je potřeba udělat k další hlavičce 
+#### Směrované informace
+- v současnosti je využívána jediná volba (typ=0)
+#### Záhlaví fragmentu
+- každý IP datagram neobsahuje identifikaci
+- identifikace je pouze v dalším záhlaví
+#### Autentiyační hlavička
+- odesílatel autentizuje data
+- datagram je zabezpečen proti změně
+- kontrolní součet se počítá pomocí algoritmu MD-5
+- klíč je dlouhý 128 bitů - vymění si jej odesílatel s příjemcem
+#### Bezpečnostní hlavička
+- umožňuje šifrování přenášená data
+- musí být poslední hlavičkou
+- první 4 bajty - info pro šifrování (typ šifry, mód šifry, šifrovací klíče atd.)
+- využití bezpečnosti hlavičky:
+- šifruje odesílatel, dešifruje příjemce
+- odesílatel ani příjemce se šifrováním nezabývají. Šifrují až směrovače (bezpečnostní brány)
