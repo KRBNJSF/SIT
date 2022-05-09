@@ -525,7 +525,8 @@ IPV4 prefixes
   - obsahuje jen nutné hlavičky
   - pole **délka hlavičky** - specifikuje posunutí, které je potřeba udělat k další hlavičce 
 #### Směrované informace
-- v současnosti je využívána jediná volba (typ=0)
+- v současnosti je využívána jediná volba (typ=0) - explicitní směrování
+- jsem specifikovány IP adresy směrovačů
 #### Záhlaví fragmentu
 - každý IP datagram neobsahuje identifikaci
 - identifikace je pouze v dalším záhlaví
