@@ -542,3 +542,55 @@ IPV4 prefixes
 - využití bezpečnosti hlavičky:
 - šifruje odesílatel, dešifruje příjemce
 - odesílatel ani příjemce se šifrováním nezabývají. Šifrují až směrovače (bezpečnostní brány)
+
+### Přechod IPv4 do IPv6
+#### Dvojí zásobník
+- uzly podporují oba protokoly
+- je vyžadován IPv4
+- východisko pro další dvě metodyd
+- v současné době se v tomto režimu nachází většina sítí a zařízení
+#### Tunelování
+- tunel slouží k domluvě dvou zařízení pracující na stejném protokolu, ale mezi nimi ležící síť tento protokol nepodporuje
+- existují dva typy tunelů
+  - **1. Explicitně konfigurovaný** - vytváří správce dotyčného zařízení
+    - podporu nabízí "tunelové servery" - po registraci se konfiguračním scriptem vytvoří tunel do IPv6 sítě
+  - **2. Automatický** - vytvořen bez lidského zásahu
+#### Transátory
+- řeší komunikaci stroje podporující jen IPv4 se strojem s pouze IPv6
+- základn představuje překlad adres a algoritmus pro překlad IP datagramů
+- nejvýznamnější je **NAT64**
+- umístění - mezi koncovou (IPv6) sítí a Internetem (IPv4)
+- má k dispozici sadu **IPv4** adres a na ně mapuje **IPv6** adresy z koncové sítě
+- spolupracuje s **DNS64** - místním strojům jsou jména IPv4 adres překádána na IPv6 adresy mapující jejich skutečné IPv4 adresy
+#### 6to4
+- **Oficiálně**: Connection of IPv6 Domains via IPv4 Clouds
+- automatický tunelovací mechanismus
+- uplatnění např. když chceme nasadit IPv6, IPS podpuruje jen IPv4
+- je nutná jedna veřejná IPv4 adresa
+- veřejná IPv4 adresa přiřazena 6to4 směrocači
+- vytvoří se prefix std. dělky **48** bitů
+- prvních 16 bitů - **2002**
+- následující 32 bitů je tvořeno IPv4 adresou 6to4 směrovače
+- **příklad**: IPv4 adresa je 1.2.3.4
+- **prefix**: 2002:102:304::/48 *(5 skupinek se nahradilo ::)*
+- komunikaci s IPv6 světem zajišťují 6to4 zprostředkovatelé
+- jedná se o směrovače v Internetu mající přístup k IPv4 i IPv6 Internetu a podporující 6to4
+- směrocacími protokoly ohlašují dostuppnost prefixu **2002::/16**
+- pro přestup ze 6to4 do nativního IPv6 je přidělena pevná výběrová adresa **192.88.99.1** (6to4 **2002:c058:6301::**)
+- 6to4 směrovač si tuto adresu nastaví jako implicitní cestu
+- **přednosti**
+  - nenáročnost a jednoduchost - jedna veřejná IPv4 adresa + konfigurační příkazy na přístupovém směrovači
+- **nedostatky**
+  - nespolehlivost (vysoká) - využívají se prvky provozované různými subjekty
+  - asymetrické směrování - nelze ovlivnit
+- tyto nedostatky odstraňuje **6rd**
+#### 6rd - rapid deployment
+- mechanismus vychází z 6to4
+- prefixy vychází z IPv4 adres adresního prostoru **poskytovatele**
+- pro prefix vyčleněno **32 bitů**
+- **přednosti**
+  - operace probíhající v síti poskytovatele
+  - vyšší míra spolehlivosti 
+- **nedostatky**
+  - závislost na poskytovateli - pokud 6rd nepodporuje je nedostupný pro klienty
+  - prefix /32 představuje všechny IPv6 adresy poskytovatele a nemůže je vyhradit pro 6rd
