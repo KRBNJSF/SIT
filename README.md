@@ -594,3 +594,50 @@ IPV4 prefixes
 - **nedostatky**
   - závislost na poskytovateli - pokud 6rd nepodporuje je nedostupný pro klienty
   - prefix /32 představuje všechny IPv6 adresy poskytovatele a nemůže je vyhradit pro 6rd
+
+### ICMP v6
+- signalizace chybových stavů a diagnostika
+- definován v RFC 2463
+- nové funkce oproti ICMP pro IPv4
+- z hlediska struktury paketu se jeví jako protokol vyšší vrstvy
+
+![image](https://user-images.githubusercontent.com/83291717/171611129-ec4da8e5-4538-413e-abe6-469f173ad935.png)
+![image](https://user-images.githubusercontent.com/83291717/171611192-b6ec4407-1359-4673-8084-f987b714c607.png)
+
+#### překlad IP adres na linkové adresy
+- stanice „**A**“ chce odeslat IP datagram stanici „**B**“
+- potřebuje zjistit linkovou adresu (IP adresu zná)
+- pro zjištění slouží **dva typy** ICMP zpráv:
+- **1) 6ádost o linkovou adresu – oběžník**
+  - pole Hopy = 255
+  - při průchodu přes směrovač je hodnota snížena na menší hodnotu
+  - příjemce následně zjistí, že se jedná o zatoulanou žádost
+  - **neodpovídá** na ní
+  - pole příjemce – IP adrese `FF02:1::4321:1234`
+  - jedná se o oběžník
+  - první část adresy specifikuje oběžník
+  - druhá část – poslední čtyři bajty IP adresy příjemce
+  - každá stanice je povinna poslouchat oběžníky výše uvedeného typu
+  - snižuje se zatížení stanic na síti
+- **2) oznámení o linkové adrese**
+  - odpovědí na žádost je „oznámení o linkové adrese“
+  - příjemce tuto informaci ukládá do paměti
+  - pole „Hopy“ = 1 – zamezí zatoulání
+  - IP adresa příjemce = IP adresa žadatele, ne oběžník
+  - bit „**R**“ = 1 – odesílatel je směrovač
+  - bit „**S**“ = 1 – odpověď na žádost
+  - bit „**O**“ = 1 – odesílatel zdůrazňuje příjemci nutnost přepsání hodnoty uložené v paměti
+#### zjištění adresy směrovače na LAN
+- stanice při komunikaci mimo LAN musí znát IP adresu směrovače – získá položku „default“ do své směrovací tabulky
+- směrovače tuto informaci pravidelně šíří pro všechny počítače v LAN oběžníkem pomocí ICMP zprávy oznámení o směrování
+- po přijetí zprávy: směr default = odesílatel
+#### ICMP zpráva oznámení o směrování
+- typ: 134; Kód: 0
+- max. hopů: stanicím je doporučována hodnota, kterou mají vyplňovat do pole počet hopů v základním záhlaví IP datagramu
+- bity „M“ a „O“: pro protokoly vyšších vrstev (slouží pro automatickou konfiguraci stanice. Např. DHCP)
+- životnost informace (Router Lifetime): čas ve vteřinách, po který by měla stanice položku default udržovat ve směrovacích tabulkách
+- hodnota „0“ – neudržovat default ukazující na odesílatele
+- čas dosažitelnosti a časový interval opakování žádosti: týkají se žádostí o linkovou adresu souseda - údaj je v milisekundách
+- čas dosažitelnosti: předpoklad dosažitelnosti souseda
+- časový interval opakování žádosti: jak dlouho se má udržovat položka v paměti
+- 
