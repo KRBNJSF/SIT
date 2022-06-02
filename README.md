@@ -640,4 +640,3 @@ IPV4 prefixes
 - čas dosažitelnosti a časový interval opakování žádosti: týkají se žádostí o linkovou adresu souseda - údaj je v milisekundách
 - čas dosažitelnosti: předpoklad dosažitelnosti souseda
 - časový interval opakování žádosti: jak dlouho se má udržovat položka v paměti
-- 
