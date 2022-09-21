@@ -24,6 +24,10 @@ Distance vector -> RIP, RIP2<br>
                 -> OSPF<br>
 EGP->Path vector -> BGP<br>
 
+DV (Distance vector) - <a href="http://www.cs.vsb.cz/grygarek/SPS/projekty0405/RouteOptimization/dokumentace/ar01s01.html">Distance vector</a>
+
+LSA (Link State Advertisement) - <a href="https://www.geeksforgeeks.org/link-state-advertisement-lsa/">LSA</a>
+
 Link - Kvalita linky; Distance - počet hopů<br>
 IGP - Routuje uvnitř AS<br>
 EGP - Routuje mezi AS<br>
