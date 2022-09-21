@@ -1,4 +1,10 @@
 # SIT
+
+## 4. ročník
+<a href="https://github.com/neostetic/School-Zapisky/tree/main/SIT/4_rocnik">ZDE</a>
+
+## 3. ročník
+
 <a href="https://vydb1.spsmb.cz/phpmyadmin/index.php">🔌 phpmyadmin</a><br>
 
 <a href="https://github.com/KRBNJSF/SIT/tree/main/Cisco%20packet%20tracer">💾 Cisco files</a>
