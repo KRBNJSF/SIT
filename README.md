@@ -4,7 +4,10 @@
 <a href="https://github.com/neostetic/School-Zapisky/tree/main/SIT/4_rocnik">ZDE</a>
 
 ## MD5 zabezpečení OSPF
-- 
+- ip ospf message-digest-key 1md5 ck8z
+- ip ospf authentication-key [libovolnýKlíč]
+- ip ospf authentication-key ck8z
+- area 0 authentication message-digest
 
 ## IPv6
 ### IPv6 rozdělení adres
