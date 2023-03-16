@@ -4,7 +4,8 @@
 <a href="https://github.com/neostetic/School-Zapisky/tree/main/SIT/4_rocnik">ZDE</a>
 
 ## MD5 zabezpečení OSPF
-// upravit - není úplně správně
+// upravit
+
 - ip ospf message-digest-key 1md5 ck8z
 - ip ospf authentication-key [libovolnýKlíč]
 - ip ospf authentication-key ck8z
