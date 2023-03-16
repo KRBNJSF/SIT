@@ -3,6 +3,33 @@
 ## 4. ročník
 <a href="https://github.com/neostetic/School-Zapisky/tree/main/SIT/4_rocnik">ZDE</a>
 
+## MD5 zabezpečení OSPF
+- 
+
+## IPv6
+### IPv6 rozdělení adres
+- en
+- conf t
+- ipv6 unicast-routing
+- int g0/0
+- ipv6 add [adresa]/prefixMasky
+- ipv6 add `2000:abcd:1234::1/90`
+
+### RIP IPv6
+- ipv6 rip [libovolnyIdentifikatorProcesu] enable
+- ipv6 rip test enable
+
+### Zobrazení routovací tabulky IPv6
+- show ipv6 ro
+
+### Smazání IPv6 adresy
+IPv6 adresy se nedají přepsat jako u IPv4. Místo toho se na jedno rozhraní přidají 2 adresy - to může dělat problémy.
+- no ipv6 add [adresaKterouNechceme]/PrefixMasky
+- no ipv6 add `2000:abcd:1234::1/90`
+
+Testování funkčnosti pouze pingem, obálky nefungují - jsou pouze pro IPv4
+
+
 ## 3. ročník
 
 <a href="https://vydb1.spsmb.cz/phpmyadmin/index.php">🔌 phpmyadmin</a><br>
