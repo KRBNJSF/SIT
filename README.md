@@ -6,9 +6,9 @@
 ## MD5 zabezpečení OSPF
 // upravit
 
-- ip ospf message-digest-key 1md5 ck8z
 - ip ospf authentication-key [libovolnýKlíč]
 - ip ospf authentication-key ck8z
+- ip ospf message-digest-key 1md5 ck8z
 - area 0 authentication message-digest
 
 ## IPv6
