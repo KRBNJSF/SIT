@@ -12,10 +12,18 @@
 - area 0 authentication message-digest
 
 ## IPv6
-### IPv6 rozdělení adres
+První čtyři části je adresa sítě, zbylé čtyři části adresy pro hosty
+např. `2000:abcd:0000:0000` - adresa sítě `0000:0000:0000:0000` - adresy pro hosty
+
+### Povolení routování IPv6
 - en
 - conf t
 - ipv6 unicast-routing
+
+### IPv6 rozdělení adres
+- en
+- conf t
+- ipv6 unicast-routing // pro routovani slouzi tento prikaz
 - int g0/0
 - ipv6 add [adresa]/prefixMasky
 - ipv6 add `2000:abcd:1234::1/90`
@@ -24,15 +32,56 @@
 - ipv6 rip [libovolnyIdentifikatorProcesu] enable
 - ipv6 rip test enable
 
+### OSPF IPv6
+- en
+- conf t
+- int g0/1
+- ipv6 add `2001:abcd::1/100`
+- ex //Do globalni konfigurace
+- ipv6 router ospf [id]
+- ipv6 router ospf 1
+- router-id [libovolnyIDRouteru - musi byt na kazdem routeru jedinecne]
+- router-id 1.1.1.1
+- ex //Do globalni konfigurace
+- int g0/1
+- ipv6 ospf [id] area [id]
+- ipv6 ospf 1 area 0
+
+### Redistribuce IPv6
+#### Stejné jako u IPv4, tzn. V OSPF redistribuce pro rip; v RIP redistribuce pro ospf
+- Zde redistribuci provádíš na portu, ne na celém routeru
+- Kam port směřuje, tam bude protokol
+- na port g0/0 bude např. rip
+- na port g0/1 bude např. ospf
+
+#### OSPF
+- ipv6 router ospf [id]
+- ipv5 router ospf 1
+- red rip [id]
+- red rip test
+
+#### RIP
+- red rip [id]
+- router rip test
+- red ospf [id] metric [velikost]
+- red ospf 1 metric 1
+
+### VLAN IPv6
+#### Stejné jako u IPv4; Pokud máme adresu `2000:abcd::0`, musíme do sub-if přidat adresu `2001:abcd::0`, aby nebyla ze stejné podsítě
+- doplnit
+
 ### Zobrazení routovací tabulky IPv6
 - show ipv6 ro
 
 ### Smazání IPv6 adresy
-IPv6 adresy se nedají přepsat jako u IPv4. Místo toho se na jedno rozhraní přidají 2 adresy - to může dělat problémy.
+#### IPv6 adresy se nedají přepsat jako u IPv4. Místo toho se na jedno rozhraní přidají 2 adresy - to může dělat problémy.
 - no ipv6 add [adresaKterouNechceme]/PrefixMasky
 - no ipv6 add `2000:abcd:1234::1/90`
 
-Testování funkčnosti pouze pingem, obálky nefungují - jsou pouze pro IPv4
+### Test funkce IPv6
+#### Testování funkčnosti pouze pingem, obálky nefungují - jsou pouze pro IPv4
+- ping [adresa]
+- ping `2001:abcd::2`
 
 
 ## 3. ročník
