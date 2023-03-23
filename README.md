@@ -41,7 +41,7 @@ např. `2000:abcd:0000:0000` - adresa sítě `0000:0000:0000:0000` - adresy pro 
 - ipv6 router ospf [id]
 - ipv6 router ospf 1
 - router-id [libovolnyIDRouteru - musi byt na kazdem routeru jedinecne]
-- router-id 1.1.1.1
+- router-id 1.1.1.1 nebo router-id 2.2.2.2 apod.
 - ex //Do globalni konfigurace
 - int g0/1
 - ipv6 ospf [id] area [id]
