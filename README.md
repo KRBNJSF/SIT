@@ -25,9 +25,10 @@ např. `2000:abcd:0000:0000` - adresa sítě `0000:0000:0000:0000` - adresy pro 
 - en
 - conf t
 - ipv6 unicast-routing // pro routovani slouzi tento prikaz
+- ipv6 cef
 - int g0/0
 - ipv6 add [adresa]/prefixMasky
-- ipv6 add `2000:abcd:1234::1/90`
+- ipv6 add `2000:abcd:1234::1/90` eui-64
 
 ### RIP IPv6
 - ipv6 rip [libovolnyIdentifikatorProcesu] enable
@@ -81,6 +82,7 @@ např. `2000:abcd:0000:0000` - adresa sítě `0000:0000:0000:0000` - adresy pro 
 
 ### Test funkce IPv6
 #### Testování funkčnosti pouze pingem, obálky nefungují - jsou pouze pro IPv4
+- do sh ipv6 int br //zkopiruji adresu
 - ping [adresa]
 - ping `2001:abcd::2`
 
