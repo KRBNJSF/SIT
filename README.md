@@ -56,7 +56,7 @@ např. `2000:abcd:0000:0000` - adresa sítě `0000:0000:0000:0000` - adresy pro 
 
 #### OSPF
 - ipv6 router ospf [id]
-- ipv5 router ospf 1
+- ipv6 router ospf 1
 - red rip [id]
 - red rip test
 
