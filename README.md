@@ -19,6 +19,7 @@ např. `2000:abcd:0000:0000` - adresa sítě `0000:0000:0000:0000` - adresy pro 
 - en
 - conf t
 - ipv6 unicast-routing
+- ipv6 cef
 
 ### IPv6 rozdělení adres
 - en
