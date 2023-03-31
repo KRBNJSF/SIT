@@ -4,12 +4,8 @@
 <a href="https://github.com/neostetic/School-Zapisky/tree/main/SIT/4_rocnik">ZDE</a>
 
 ## MD5 zabezpečení OSPF
-// upravit
-
-- ip ospf authentication-key [libovolnýKlíč]
-- ip ospf authentication-key ck8z
-- ip ospf message-digest-key 1md5 ck8z
-- area 0 authentication message-digest
+int g0/0
+- ip ospf message-digest-key 1md5 cisco
 
 ## IPv6
 První čtyři části je adresa sítě, zbylé čtyři části adresy pro hosty
